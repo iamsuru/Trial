@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SmartScan</title>
+    <link rel="stylesheet" href="/index_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>SmartScan Login</h2>
+            <form method="post" action="/login">
+                <label for="username">Username</label><br>
+                <input type="input" id="username" name="username" placeholder="Enter Username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter Password"><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/landscape_background.png);
+    background-size: cover; /* Make the background image responsive */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center center; /* Center the background image */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:700px){
+    .container{
+        background-image: url(../images/portrait_background.png);
+    }
+    body{
+        overflow: hidden;
+    }
+}
+
+
+.login-form{
+    background-color: rgba(0, 0, 0, 0.150);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 2px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 20px;
+    background-color: #0D6EFD;
+    color: white;
+}
+</style>

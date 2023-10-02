@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - SmartScan</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="details">
+            <h2>Enter Details</h2>
+            <form>
+                <label class="label" for="full_name">Full Name</label><br>
+                <input class="input" type="text" id="full_name" autocomplete="off"><br>
+    
+                <label class="label" for="email">Email ID</label><br>
+                <input class="input" type="text" id="email" autocomplete="off"><br>
+    
+                <label class="label" for="dob">Date of Birth</label><br>
+                <input class="input" type="date" id="dob" autocomplete="off"><br>
+    
+                <label class="label" for="mobile_number">Mobile Number</label><br>
+                <input class="input" type="tel" id="mobile_number" autocomplete="off"><br>
+    
+                <label class="label">Gender</label><br>
+                <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label></input>
+                <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+                <input type="radio" name="gender" value="Other" id="other"><label for="other">Other</label>
+                </input><br>
+
+                <label class="label" for="showQR">Document</label>
+                <input type="button" value="Upload" id="showQR"><br> 
+    
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="preview">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../images/landscape_background.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.details {
+    background-color: rgba(0, 0, 0, 0.150);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    float: left; /* Add this line to make it float to the left */
+    box-sizing: border-box; /* Add this to include padding and margin in width calculation */
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label {
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 2px;
+}
+
+input {
+    margin: 5px;
+    padding: 2px;
+}
+
+#showQR {
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #0DCAF0;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 20px;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.preview {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    float: left; /* Add this line to make it float to the left */
+    box-sizing: border-box; /* Add this to include padding and margin in width calculation */
+}
+
+iframe{
+    width: 100%;
+    height:100%;
+}
+</style>
